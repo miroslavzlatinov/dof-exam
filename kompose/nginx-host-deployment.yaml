@@ -27,8 +27,8 @@ spec:
       - image:  zlatinov/dof-nginx:%NGINX-IMAGE-PLACEHOLDER%
         imagePullPolicy: ""
         volumeMounts:
-          - name: "html"
-            mountPath: "/site"          
+          - name: html
+            mountPath: /site          
         name: nginx-host
         ports:
         - containerPort: 80
