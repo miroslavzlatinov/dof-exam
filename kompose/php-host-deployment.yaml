@@ -25,12 +25,20 @@ spec:
     spec:
       containers:
       - image: zlatinov/dof-php:%PHP-IMAGE-PLACEHOLDER%
+        volume_mount:
+           name: "html"
+           mount_path: "/site"
+           read_only: true
         imagePullPolicy: ""
         name: php-host
         ports:
         - containerPort: 9000
         resources: {}
       restartPolicy: Always
+      volumes:
+      - name: html
+        hostPath:
+          path: app/
       serviceAccountName: ""
       volumes: null
 status: {}
