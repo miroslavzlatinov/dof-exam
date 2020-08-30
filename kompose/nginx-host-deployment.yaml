@@ -32,8 +32,8 @@ spec:
         name: nginx-host
         ports:
         - containerPort: 80
-        volumes:
-        - name: html
+      volumes:
+      - name: html
           hostPath:
             path: app/
         resources: {}
