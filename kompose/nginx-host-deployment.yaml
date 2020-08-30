@@ -35,7 +35,7 @@ spec:
       volumes:
       - name: html_volume
         hostPath:
-          path: app/
+          path: /home/jenkins/agent/workspace/dof-pipeline/app
         resources: {}
       restartPolicy: Always
       serviceAccountName: ""
