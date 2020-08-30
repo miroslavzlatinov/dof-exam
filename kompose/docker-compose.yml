@@ -13,7 +13,7 @@ services:
       mode: replicated
       replicas: 3
   php-host:
-    image: zlatinov/dof-nginx:ltest
+    image: zlatinov/dof-php:ltest
     ports:
     - "9000:9000"
     volumes:
