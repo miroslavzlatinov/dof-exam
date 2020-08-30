@@ -27,13 +27,13 @@ spec:
       - image:  zlatinov/dof-nginx:%NGINX-IMAGE-PLACEHOLDER%
         imagePullPolicy: ""
         volumeMounts:
-        - name: html_volume
+        - name: htmlvolume
           mountPath: /site          
         name: nginx-host
         ports:
         - containerPort: 80
       volumes:
-      - name: html_volume
+      - name: htmlvolume
         hostPath:
           path: /home/jenkins/agent/workspace/dof-pipeline/app
         resources: {}

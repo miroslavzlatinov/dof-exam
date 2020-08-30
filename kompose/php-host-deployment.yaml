@@ -26,7 +26,7 @@ spec:
       containers:
       - image: zlatinov/dof-php:%PHP-IMAGE-PLACEHOLDER%
         volumeMounts:
-        - name: html_volume
+        - name: htmlvolume
           mountPath: /site
         imagePullPolicy: ""
         name: php-host
@@ -35,7 +35,7 @@ spec:
         resources: {}
       restartPolicy: Always
       volumes:
-      - name: html_volume
+      - name: htmlvolume
         hostPath:
         path: /home/jenkins/agent/workspace/dof-pipeline/app
       serviceAccountName: ""
