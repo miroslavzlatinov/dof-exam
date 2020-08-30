@@ -27,7 +27,7 @@ spec:
       - image: zlatinov/dof-php:%PHP-IMAGE-PLACEHOLDER%
         volumeMounts:
           - name: "html"
-             mountPath: "/site"
+            mountPath: "/site"
         imagePullPolicy: ""
         name: php-host
         ports:
@@ -35,9 +35,9 @@ spec:
         resources: {}
       restartPolicy: Always
       volumes:
-        - name: html
-          hostPath:
-          path: app/
+      - name: html
+        hostPath:
+        path: app/
       serviceAccountName: ""
       volumes: null
 status: {}
