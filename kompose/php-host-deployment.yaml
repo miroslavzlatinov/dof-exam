@@ -37,7 +37,7 @@ spec:
       volumes:
       - name: htmlvolume
         hostPath:
-        path: /home/jenkins/agent/workspace/dof-pipeline/app
+          path: /home/jenkins/agent/workspace/dof-pipeline/app
         type: Directory
       serviceAccountName: ""
       volumes: null
