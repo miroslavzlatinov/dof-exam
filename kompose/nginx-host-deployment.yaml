@@ -27,15 +27,15 @@ spec:
       - image:  zlatinov/dof-nginx:%NGINX-IMAGE-PLACEHOLDER%
         imagePullPolicy: ""
         volumeMounts:
-          - name: html
-            mountPath: /site          
+        - name: html
+          mountPath: /site          
         name: nginx-host
         ports:
         - containerPort: 80
       volumes:
       - name: html
-          hostPath:
-            path: app/
+        hostPath:
+          path: app
         resources: {}
       restartPolicy: Always
       serviceAccountName: ""
