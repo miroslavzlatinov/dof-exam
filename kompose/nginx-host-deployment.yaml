@@ -32,13 +32,15 @@ spec:
         name: nginx-host
         ports:
         - containerPort: 80
+        resources: {}
       volumes:
       - name: htmlvolume
         hostPath:
           path: /home/jenkins/agent/workspace/dof-pipeline/app
-        type: Directory
-        resources: {}
+          type: Directory
       restartPolicy: Always
       serviceAccountName: ""
-      volumes: null
+      
 status: {}
+
+
