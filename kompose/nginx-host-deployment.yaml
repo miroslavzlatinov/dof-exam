@@ -24,7 +24,7 @@ spec:
         io.kompose.service: nginx-host
     spec:
       containers:
-      - image:  zlatinov/dof-nginx:/%NGINX-IMAGE-PLACEHOLDER%
+      - image:  zlatinov/dof-nginx:%NGINX-IMAGE-PLACEHOLDER%
         imagePullPolicy: ""
         name: nginx-host
         ports:
