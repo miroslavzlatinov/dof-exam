@@ -25,10 +25,9 @@ spec:
     spec:
       containers:
       - image: zlatinov/dof-php:%PHP-IMAGE-PLACEHOLDER%
-        volume_mount:
-           name: "html"
-           mount_path: "/site"
-           read_only: true
+        volumeMounts:
+           - name: "html"
+           mountPath: "/site"
         imagePullPolicy: ""
         name: php-host
         ports:
